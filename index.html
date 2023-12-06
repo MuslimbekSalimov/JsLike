@@ -1,16 +1,35 @@
+Copy code
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Like Hisoblash</title>
 </head>
 <body>
-    
-        <p id="likeCount"></p>
-        <button id="likeButton" onclick="like()">Bosing</button>
 
+    <p id="likeCount">0</p>
+    <button id="likeButton" onclick="like()">Likee</button>
 
-    <script src="./js/main.js"></script>
+    <script>
+        let likeCount = 0;
+
+        function like() {
+            likeCount++;
+            
+            if (likeCount > 30) {
+                alert("Siz 30 dan ortiq like qo'shdingiz!");
+                likeCount = 0; 
+            }
+
+            updateLikeCount();
+        }
+
+        function updateLikeCount() {
+            let likeCountElement = document.getElementById("likeCount");
+            likeCountElement.innerHTML = likeCount;
+        }
+    </script>
+
 </body>
 </html>

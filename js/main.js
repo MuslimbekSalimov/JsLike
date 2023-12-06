@@ -1,15 +1,15 @@
-let likeCount = 0;
+// let likeCount = 0;
 
-        function like() {
-            likeCount++;
-            updateLikeCount();
+//         function like() {
+//             likeCount++;
+//             updateLikeCount();
 
-            if (likeCount > 30) {
-                alert("30 tada ko'p yozdiz Qayting Bro?");
-            }
-        }
+//             if (likeCount > 30) {
+//                 alert("30 tada ko'p yozdiz Qayting Bro?");
+//             }
+//         }
 
-        function updateLikeCount() {
-            let likeCountElement = document.getElementById("likeCount");
-            likeCountElement.innerHTML = likeCount;
-        }
+//         function updateLikeCount() {
+//             let likeCountElement = document.getElementById("likeCount");
+//             likeCountElement.innerHTML = likeCount;
+//         }
